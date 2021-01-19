@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Banking System</string>
+    <!--    <string name="app_name">Sample Application Tests</string>-->
+    <string name="welcome">Welcome</string>
+    <string name="transfer_money_in_three_simple_steps">Transfer Money in 3 Simple Steps</string>
+    <string name="view_all_customers">1. View All Customers</string>
+    <string name="enter_their_details">2. Enter their Details</string>
+    <string name="complete_transaction">Complete Transaction</string>
+    <string name="btext">P R O C E E D</string>
+    <string name="view_customers">View Customers</string>
+    <string name="view_transactions">View Transactions</string>
+    <string name="transfer_money">Transfer Money</string>
+    <string name="t_r_a_n_s_f_e_r">T r a n s f e r</string>
+</resources>

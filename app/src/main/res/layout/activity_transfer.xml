@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".TransferActivity">-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Transfer money"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:id="@+id/tm"-->
+<!--        android:textAppearance="?android:textAppearanceMedium"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        />-->
+<!--    <EditText-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/tm"-->
+<!--        android:id="@+id/from"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="66dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:hint="FROM A/C NO"-->
+<!--        />-->
+<!--    <EditText-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/from"-->
+<!--        android:id="@+id/to"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:hint="TO A/C NO"-->
+<!--        />-->
+<!--    <EditText-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/money"-->
+<!--        android:layout_below="@id/to"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:inputType="numberDecimal"-->
+<!--        android:hint="Amount"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/money"-->
+<!--        android:id="@+id/pay"-->
+<!--        android:layout_marginTop="26dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="PAY"-->
+<!--        />-->
+<!--</RelativeLayout>-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd"
+    tools:context=".TransferActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0099ff"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:background="#60000000"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/back3"
+            android:layout_width="56dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:background="#0036BC9B"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_action_name"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="127dp"
+            android:text="From Account NO:"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="#b3e0ff"
+            android:textSize="23sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="48dp" />
+
+        <EditText
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="168dp"
+            android:layout_marginEnd="43dp"
+            android:textSize="25sp"
+            android:id="@+id/from"
+            android:fontFamily="monospace"
+            android:textColor="#b3e0ff"
+            android:paddingStart="2sp"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:background="#20FFFFFF"
+            android:layout_marginRight="43dp"
+            android:layout_marginLeft="46dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="2sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="257dp"
+            android:text="To Account NO:"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="#b3e0ff"
+            android:textSize="23sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="48dp" />
+
+        <EditText
+            android:id="@+id/to"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="298dp"
+            android:layout_marginEnd="43dp"
+            android:textSize="25sp"
+            android:textColor="#b3e0ff"
+            android:fontFamily="monospace"
+            android:paddingStart="2sp"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:background="#20FFFFFF"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="43dp"
+            android:paddingLeft="2sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="387dp"
+            android:text="Amount (₹.):"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="#b3e0ff"
+            android:textSize="23sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="48dp" />
+
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="428dp"
+            android:layout_marginEnd="43dp"
+            android:textSize="25sp"
+            android:inputType="numberDecimal"
+            android:fontFamily="monospace"
+            android:textColor="#b3e0ff"
+            android:paddingStart="2sp"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:background="#20FFFFFF"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="43dp"
+            android:paddingLeft="2sp" />
+
+        <Button
+            android:id="@+id/pay"
+            android:layout_width="322dp"
+            android:layout_height="55sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="130dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="@string/t_r_a_n_s_f_e_r"
+            android:background="#0099ff"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="43dp"
+            android:layout_marginLeft="48dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
